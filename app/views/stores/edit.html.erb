@@ -1,0 +1,14 @@
+<h1>編輯店家</h1>
+<%= form_for(@store) do |form| %>
+
+<div class="fields">
+  <%= form.label :email, "email" %>
+  <%= form.text_field :email %>
+</div>
+<div class="fields">
+  <%= form.label :name, "店家名稱" %>
+  <%= form.text_field :name %>
+</div>
+  
+<%= form.submit %>
+<% end %>
